@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form th:action="@{/user/finished}"method = "post" >
+名前：<input type="text" name="name" id="name"><br>
+ふりがな：<input type="text" name ="kana" id="kana"><br>
+郵便番号：<input type="text"name= "zipcode"id="zipcode"><br>
+住所：<input type="text"name= "address"id="address"><br>
+電話番号：<input type="text" name ="phoneNumber"id="phoneNumber"><br>
+パスワード：<input type="text" name="password"id="password"><br>
+確認パスワード：<input type="text"name="confpassword"id="confpassword"><br>
+<button>登録</button>
+</form>     
+</body>
+</html>
